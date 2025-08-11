@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "underworld:block/delusion_door_lower"
+  },
+  "render_type": "cutout_mipped"
+}

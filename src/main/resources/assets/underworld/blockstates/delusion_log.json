@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "underworld:block/delusion_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "underworld:block/delusion_log"
+    },
+    "axis=z": {
+      "model": "underworld:block/delusion_log",
+      "x": 90
+    }
+  }
+}

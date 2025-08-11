@@ -1,0 +1,8 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "particle": "underworld:block/delusion_planks_pattern",
+    "texture": "underworld:block/delusion_planks_pattern"
+  },
+  "render_type": "cutout_mipped"
+}

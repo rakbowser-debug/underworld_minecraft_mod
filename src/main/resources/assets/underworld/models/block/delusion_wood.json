@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "underworld:block/delusion_log_side",
+    "top": "underworld:block/delusion_log_side",
+    "side": "underworld:block/delusion_log_side",
+    "overlay": "underworld:block/delusion_log_side",
+    "particle": "underworld:block/delusion_log_side"
+  },
+  "render_type": "cutout_mipped"
+}

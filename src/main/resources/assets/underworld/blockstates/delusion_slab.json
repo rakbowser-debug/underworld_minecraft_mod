@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "underworld:block/delusion_slab"
+    },
+    "type=top": {
+      "model": "underworld:block/delusion_slab_top"
+    },
+    "type=double": {
+      "model": "underworld:block/delusion_slab_full"
+    }
+  }
+}

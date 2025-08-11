@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "underworld:delusion_plain",
+    "underworld:logged_deep_forest",
+    "underworld:eternal_desert",
+    "underworld:delusion_forest",
+    "underworld:eternal_beach"
+  ]
+}

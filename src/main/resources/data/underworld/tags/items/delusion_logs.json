@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "underworld:delusion_wood",
+    "underworld:tripped_delusion_log",
+    "underworld:tripped_delusion_wood",
+    "underworld:delusion_log"
+  ]
+}

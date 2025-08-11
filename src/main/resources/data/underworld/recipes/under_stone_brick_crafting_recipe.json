@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "underworld:under_stone"
+    }
+  },
+  "result": {
+    "item": "underworld:under_stone_bricks",
+    "count": 4
+  }
+}

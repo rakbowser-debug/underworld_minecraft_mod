@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.CRYING_OBSIDIAN"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "block.amethyst_block.break"
+    },
+    "igniteFire": false,
+    "disableGravity": false,
+    "power": 1.5,
+    "damage": 5.0,
+    "knockback": 0,
+    "entityModel": "ModelShade_of_VampireCore",
+    "customModelTexture": "cryingobsidian.png",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5
+  }
+}

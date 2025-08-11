@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "underworld:block/logged_wood_planks",
+    "bottom": "underworld:block/logged_wood_planks",
+    "top": "underworld:block/logged_wood_planks",
+    "side": "underworld:block/logged_wood_planks"
+  },
+  "render_type": "solid"
+}

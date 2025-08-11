@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "underworld:block/player_enchant_block"
+    }
+  }
+}

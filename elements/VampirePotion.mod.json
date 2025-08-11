@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Vampire",
+    "splashName": "Splash Potion of Vampire",
+    "lingeringName": "Lingering Potion of Vampire",
+    "arrowName": "Arrow of Vampire",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Vampire"
+        },
+        "duration": 3600,
+        "infinite": true,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

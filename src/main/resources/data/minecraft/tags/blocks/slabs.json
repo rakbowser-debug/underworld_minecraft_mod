@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "underworld:under_cobblestone_slab",
+    "underworld:under_stone_bricks_slab",
+    "underworld:delusion_slab",
+    "underworld:logged_wood_slab",
+    "underworld:under_stone_slab"
+  ]
+}

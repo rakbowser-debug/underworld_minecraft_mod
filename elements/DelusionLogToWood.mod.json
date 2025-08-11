@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:DelusionLog"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DelusionLog"
+      },
+      {
+        "value": "CUSTOM:DelusionLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DelusionLog"
+      },
+      {
+        "value": "CUSTOM:DelusionLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DelusionWood"
+    },
+    "name": "delusion_log_to_wood",
+    "namespace": "mod"
+  }
+}

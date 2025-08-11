@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "underworld:block/logged_wood_slab"
+    },
+    "type=top": {
+      "model": "underworld:block/logged_wood_slab_top"
+    },
+    "type=double": {
+      "model": "underworld:block/logged_wood_slab_full"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "underworld:block/under_stone_brick",
+    "bottom": "underworld:block/under_stone_brick",
+    "top": "underworld:block/under_stone_brick",
+    "side": "underworld:block/under_stone_brick"
+  },
+  "render_type": "solid"
+}

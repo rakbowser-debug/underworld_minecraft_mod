@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#underworld:logged_wood_logs",
+      "required": false
+    },
+    {
+      "id": "#underworld:delusion_logs",
+      "required": false
+    }
+  ]
+}

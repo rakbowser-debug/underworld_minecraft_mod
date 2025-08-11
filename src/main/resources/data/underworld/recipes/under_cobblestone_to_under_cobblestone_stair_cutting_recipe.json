@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "underworld:under_cobblestone"
+  },
+  "result": "underworld:under_cobblestone_stairs"
+}

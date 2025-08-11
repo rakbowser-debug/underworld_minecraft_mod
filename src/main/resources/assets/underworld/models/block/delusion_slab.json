@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "underworld:block/delusion_planks_pattern",
+    "bottom": "underworld:block/delusion_planks_pattern",
+    "top": "underworld:block/delusion_planks_pattern",
+    "side": "underworld:block/delusion_planks_pattern"
+  },
+  "render_type": "cutout_mipped"
+}

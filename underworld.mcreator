@@ -1,0 +1,2334 @@
+{
+  "mod_elements": [
+    {
+      "name": "UnderWorld",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/world/dimension/UnderWorldDimension.java",
+          "src/main/java/net/mcreator/underworld/world/teleporter/UnderWorldTeleporter.java",
+          "src/main/java/net/mcreator/underworld/world/teleporter/UnderWorldPortalShape.java",
+          "src/main/resources/data/underworld/dimension_type/under_world.json",
+          "src/main/java/net/mcreator/underworld/block/UnderWorldPortalBlock.java",
+          "src/main/resources/data/underworld/dimension/under_world.json",
+          "src/main/resources/assets/underworld/blockstates/under_world_portal.json",
+          "src/main/resources/assets/underworld/models/block/under_world_portal_ew.json",
+          "src/main/resources/assets/underworld/models/block/under_world_portal_ns.json"
+        ]
+      }
+    },
+    {
+      "name": "Grasp",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grasp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/enchantment/GraspEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "GraspProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grasp_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/GraspProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vampire",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/potion/VampireMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "VampirePotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "VampireHealing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_healing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/VampireHealingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VampireStrengthSettings",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_strength_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/VampireStrengthSettingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VampireStrengthMinus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_strength_minus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/VampireStrengthMinusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Restoration",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restoration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/enchantment/RestorationEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "RestorationProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restoration_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/RestorationProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VampireGirlElleBattleStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_girl_elle_battle_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/VampireGirlElleBattleStartProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "VampireCore",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_core",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/entity/VampireCoreEntity.java",
+          "src/main/java/net/mcreator/underworld/client/renderer/VampireCoreRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "VampireBatMetamorphosis",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_bat_metamorphosis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/VampireBatMetamorphosisProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VampireBat",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_bat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/client/renderer/VampireBatRenderer.java",
+          "src/main/java/net/mcreator/underworld/entity/VampireBatEntity.java",
+          "src/main/resources/assets/underworld/models/item/vampire_bat_spawn_egg.json",
+          "src/main/resources/data/underworld/forge/biome_modifier/vampire_bat_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "EnchantedPlayerGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_player_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/client/gui/EnchantedPlayerGuiScreen.java",
+          "src/main/java/net/mcreator/underworld/world/inventory/EnchantedPlayerGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "EnchantedPlayerModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_player_model",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/EnchantedPlayerModelProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerEnchantBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_enchant_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/player_enchant_block.json",
+          "src/main/java/net/mcreator/underworld/block/PlayerEnchantBlockBlock.java",
+          "src/main/resources/data/underworld/loot_tables/blocks/player_enchant_block.json",
+          "src/main/resources/assets/underworld/blockstates/player_enchant_block.json",
+          "src/main/java/net/mcreator/underworld/block/entity/PlayerEnchantBlockBlockEntity.java",
+          "src/main/resources/assets/underworld/models/block/player_enchant_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerCore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_core",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/item/PlayerCoreItem.java",
+          "src/main/resources/assets/underworld/models/item/player_core.json"
+        ]
+      }
+    },
+    {
+      "name": "UnderWorldsNature",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_worlds_nature",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Blocks/CreativeTabs"
+    },
+    {
+      "name": "LoggedWoodLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_log.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_log.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodLogBlock.java",
+          "src/main/resources/assets/underworld/models/item/logged_wood_log.json",
+          "src/main/resources/assets/underworld/blockstates/logged_wood_log.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/logged_wood_wood.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_wood.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodWoodBlock.java",
+          "src/main/resources/assets/underworld/blockstates/logged_wood_wood.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_wood.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/logged_wood_planks.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_planks.json",
+          "src/main/resources/assets/underworld/models/item/logged_wood_planks.json",
+          "src/main/resources/assets/underworld/blockstates/logged_wood_planks.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodPlanksBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/logged_wood_leaves.json",
+          "src/main/resources/assets/underworld/models/item/logged_wood_leaves.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodLeavesBlock.java",
+          "src/main/resources/assets/underworld/models/block/logged_wood_leaves.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodStairsBlock.java",
+          "src/main/resources/assets/underworld/models/item/logged_wood_stairs.json",
+          "src/main/resources/assets/underworld/blockstates/logged_wood_stairs.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_stairs.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_stairs_outer.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_stairs.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_stairs_inner.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/logged_wood_slab.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_slab_full.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_slab.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_slab_top.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodSlabBlock.java",
+          "src/main/resources/assets/underworld/blockstates/logged_wood_slab.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_slab.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/logged_wood_fence.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_fence_inventory.json",
+          "src/main/resources/assets/underworld/models/item/logged_wood_fence.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodFenceBlock.java",
+          "src/main/resources/assets/underworld/models/block/logged_wood_fence.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_fence_post.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_fence.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/logged_wood_fence_gate.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_fence_gate.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_fence_gate_wall_open.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_fence_gate.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodFenceGateBlock.java",
+          "src/main/resources/assets/underworld/blockstates/logged_wood_fence_gate.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_fence_gate_wall.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_fence_gate_open.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/logged_wood_pressure_plate.json",
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodPressurePlateBlock.java",
+          "src/main/resources/assets/underworld/models/item/logged_wood_pressure_plate.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_pressure_plate_down.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_pressure_plate.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_pressure_plate.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/block/LoggedWoodButtonBlock.java",
+          "src/main/resources/assets/underworld/models/block/logged_wood_button.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/logged_wood_button.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_button_pressed.json",
+          "src/main/resources/assets/underworld/models/block/logged_wood_button_inventory.json",
+          "src/main/resources/assets/underworld/models/item/logged_wood_button.json",
+          "src/main/resources/assets/underworld/blockstates/logged_wood_button.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/logged_wood_wood_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_wood_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodPlanksRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_planks_recipe.json",
+          "src/main/resources/data/underworld/recipes/logged_wood_planks_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/logged_wood_stairs_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/logged_wood_slab_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_slab_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_fence_recipe.json",
+          "src/main/resources/data/underworld/recipes/logged_wood_fence_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_fence_gate_recipe.json",
+          "src/main/resources/data/underworld/recipes/logged_wood_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_pressure_plate_recipe.json",
+          "src/main/resources/data/underworld/recipes/logged_wood_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "LoggedWoodButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_wood_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/logged_wood_button_recipe.json",
+          "src/main/resources/data/underworld/recipes/logged_wood_button_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/LoggedWood"
+    },
+    {
+      "name": "Test",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/test.json",
+          "src/main/java/net/mcreator/underworld/item/TestItem.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "UnderStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/under_stone.json",
+          "src/main/resources/assets/underworld/blockstates/under_stone.json",
+          "src/main/resources/assets/underworld/models/block/under_stone.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone.json",
+          "src/main/java/net/mcreator/underworld/block/UnderStoneBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "DelusionLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/block/DelusionLogBlock.java",
+          "src/main/resources/assets/underworld/blockstates/delusion_log.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_log.json",
+          "src/main/resources/assets/underworld/models/block/delusion_log.json",
+          "src/main/resources/assets/underworld/models/item/delusion_log.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/delusion_leaves.json",
+          "src/main/resources/assets/underworld/models/block/delusion_leaves.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_leaves.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionLeavesBlock.java",
+          "src/main/resources/assets/underworld/blockstates/delusion_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionPlain",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_plain",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/worldgen/biome/delusion_plain.json",
+          "src/main/resources/data/underworld/worldgen/configured_feature/delusion_plain_tree.json",
+          "src/main/resources/data/underworld/worldgen/placed_feature/delusion_plain_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "DelusionForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/worldgen/biome/delusion_forest.json",
+          "src/main/resources/data/underworld/worldgen/configured_feature/delusion_forest_tree.json",
+          "src/main/resources/data/underworld/worldgen/placed_feature/delusion_forest_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "DelusionWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/block/DelusionWoodBlock.java",
+          "src/main/resources/assets/underworld/models/item/delusion_wood.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_wood.json",
+          "src/main/resources/assets/underworld/models/block/delusion_wood.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_wood.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/block/DelusionPlanksBlock.java",
+          "src/main/resources/assets/underworld/models/item/delusion_planks.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_planks.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_planks.json",
+          "src/main/resources/assets/underworld/models/block/delusion_planks.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "TrippedDelusionLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripped_delusion_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/tripped_delusion_log.json",
+          "src/main/java/net/mcreator/underworld/block/TrippedDelusionLogBlock.java",
+          "src/main/resources/assets/underworld/models/item/tripped_delusion_log.json",
+          "src/main/resources/assets/underworld/models/block/tripped_delusion_log.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/tripped_delusion_log.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "TrippedDelusionWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripped_delusion_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/tripped_delusion_wood.json",
+          "src/main/resources/assets/underworld/blockstates/tripped_delusion_wood.json",
+          "src/main/java/net/mcreator/underworld/block/TrippedDelusionWoodBlock.java",
+          "src/main/resources/assets/underworld/models/block/tripped_delusion_wood.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/tripped_delusion_wood.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_stairs.json",
+          "src/main/resources/assets/underworld/models/block/delusion_stairs.json",
+          "src/main/resources/assets/underworld/models/block/delusion_stairs_inner.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionStairsBlock.java",
+          "src/main/resources/assets/underworld/models/block/delusion_stairs_outer.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_stairs.json",
+          "src/main/resources/assets/underworld/models/item/delusion_stairs.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/delusion_slab_top.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionSlabBlock.java",
+          "src/main/resources/assets/underworld/models/block/delusion_slab_full.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_slab.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_slab.json",
+          "src/main/resources/assets/underworld/models/item/delusion_slab.json",
+          "src/main/resources/assets/underworld/models/block/delusion_slab.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/delusion_fence.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_fence.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionFenceBlock.java",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_fence.json",
+          "src/main/resources/assets/underworld/models/block/delusion_fence_inventory.json",
+          "src/main/resources/assets/underworld/models/block/delusion_fence_post.json",
+          "src/main/resources/assets/underworld/models/block/delusion_fence.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/delusion_fence_gate.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionFenceGateBlock.java",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_fence_gate.json",
+          "src/main/resources/assets/underworld/models/block/delusion_fence_gate.json",
+          "src/main/resources/assets/underworld/models/block/delusion_fence_gate_open.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_fence_gate.json",
+          "src/main/resources/assets/underworld/models/block/delusion_fence_gate_wall_open.json",
+          "src/main/resources/assets/underworld/models/block/delusion_fence_gate_wall.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_door.json",
+          "src/main/resources/assets/underworld/models/block/delusion_door_top_left.json",
+          "src/main/resources/assets/underworld/models/item/delusion_door.json",
+          "src/main/resources/assets/underworld/models/block/delusion_door_bottom_left_open.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionDoorBlock.java",
+          "src/main/resources/assets/underworld/models/block/delusion_door_top_right.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_door.json",
+          "src/main/resources/assets/underworld/models/block/delusion_door_bottom_left.json",
+          "src/main/resources/assets/underworld/models/block/delusion_door_top_right_open.json",
+          "src/main/resources/assets/underworld/models/block/delusion_door_bottom_right_open.json",
+          "src/main/resources/assets/underworld/models/block/delusion_door_bottom_right.json",
+          "src/main/resources/assets/underworld/models/block/delusion_door_top_left_open.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/delusion_pressure_plate_down.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_pressure_plate.json",
+          "src/main/resources/assets/underworld/models/block/delusion_pressure_plate.json",
+          "src/main/resources/assets/underworld/models/item/delusion_pressure_plate.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_pressure_plate.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionPressurePlateBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/delusion_button_pressed.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_button.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionButtonBlock.java",
+          "src/main/resources/assets/underworld/models/item/delusion_button.json",
+          "src/main/resources/assets/underworld/models/block/delusion_button_inventory.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_button.json",
+          "src/main/resources/assets/underworld/models/block/delusion_button.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionTrapDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_trap_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_trap_door.json",
+          "src/main/resources/assets/underworld/models/item/delusion_trap_door.json",
+          "src/main/resources/assets/underworld/models/block/delusion_trap_door_top.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionTrapDoorBlock.java",
+          "src/main/resources/assets/underworld/models/block/delusion_trap_door.json",
+          "src/main/resources/assets/underworld/models/block/delusion_trap_door_open.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_trap_door.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionLogToPlanks",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_log_to_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/delusion_log_to_planks.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionLogToWood",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_log_to_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/delusion_log_to_wood.json",
+          "src/main/resources/data/underworld/advancements/recipes/delusion_log_to_wood.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "TrippedDelusionLogToWood",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripped_delusion_log_to_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/tripped_delusion_log_to_wood.json",
+          "src/main/resources/data/underworld/advancements/recipes/tripped_delusion_log_to_wood.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/delusion_fence_recipe.json",
+          "src/main/resources/data/underworld/recipes/delusion_fence_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/delusion_slab_recipe.json",
+          "src/main/resources/data/underworld/recipes/delusion_slab_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/delusion_fence_gate_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/delusion_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/delusion_pressure_plate_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/delusion_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/delusion_stairs_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/delusion_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/delusion_door_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/delusion_door_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "DelusionButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/delusion_button_recipe.json",
+          "src/main/resources/data/underworld/recipes/delusion_button_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood/Recipe/BuildingBlocks"
+    },
+    {
+      "name": "LoggedDeepForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logged_deep_forest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/world/features/treedecorators/LoggedDeepForestTrunkDecorator.java",
+          "src/main/resources/data/underworld/worldgen/placed_feature/logged_deep_forest_tree.json",
+          "src/main/resources/data/underworld/worldgen/biome/logged_deep_forest.json",
+          "src/main/resources/data/underworld/worldgen/configured_feature/logged_deep_forest_tree.json",
+          "src/main/java/net/mcreator/underworld/world/features/treedecorators/LoggedDeepForestLeaveDecorator.java"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "UnderStoneBricks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/under_stone_bricks.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone_bricks.json",
+          "src/main/java/net/mcreator/underworld/block/UnderStoneBricksBlock.java",
+          "src/main/resources/assets/underworld/blockstates/under_stone_bricks.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderStoneBrickCrackedRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_brick_cracked_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_brick_cracked_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_brick_cracked_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Smelting"
+    },
+    {
+      "name": "UnderStoneBricksCracked",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks_cracked",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/under_stone_bricks_cracked.json",
+          "src/main/java/net/mcreator/underworld/block/UnderStoneBricksCrackedBlock.java",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone_bricks_cracked.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_cracked.json",
+          "src/main/resources/assets/underworld/models/item/under_stone_bricks_cracked.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderCobblestone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/under_cobblestone.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_cobblestone.json",
+          "src/main/resources/assets/underworld/blockstates/under_cobblestone.json",
+          "src/main/java/net/mcreator/underworld/block/UnderCobblestoneBlock.java",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderStoneBrickCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_brick_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/under_stone_brick_crafting_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_brick_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderStoneSmeltingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_smelting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/under_stone_smelting_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_smelting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Smelting"
+    },
+    {
+      "name": "UnderCobblestoneStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_stairs_outer.json",
+          "src/main/java/net/mcreator/underworld/block/UnderCobblestoneStairsBlock.java",
+          "src/main/resources/assets/underworld/models/item/under_cobblestone_stairs.json",
+          "src/main/resources/assets/underworld/blockstates/under_cobblestone_stairs.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_stairs.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_cobblestone_stairs.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_stairs_inner.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderCobblestoneStairsCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_stairs_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_cobblestone_stairs_crafting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_cobblestone_stairs_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderWorldBuildingBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_world_building_blocks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Blocks/CreativeTabs"
+    },
+    {
+      "name": "UnderCobblestoneSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/under_cobblestone_slab.json",
+          "src/main/java/net/mcreator/underworld/block/UnderCobblestoneSlabBlock.java",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_slab_top.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_slab.json",
+          "src/main/resources/assets/underworld/models/item/under_cobblestone_slab.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_slab_full.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_cobblestone_slab.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderCobblestoneSlabCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_slab_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/under_cobblestone_slab_crafting_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/under_cobblestone_slab_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderCobblestoneWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/under_cobblestone_wall.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_wall_side_tall.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_wall_inventory.json",
+          "src/main/java/net/mcreator/underworld/block/UnderCobblestoneWallBlock.java",
+          "src/main/resources/assets/underworld/models/item/under_cobblestone_wall.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_cobblestone_wall.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_wall.json",
+          "src/main/resources/assets/underworld/models/block/under_cobblestone_wall_post.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderCobblestoneWallCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_wall_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/under_cobblestone_wall_crafting_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/under_cobblestone_wall_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderStoneStairsCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_stairs_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_stairs_crafting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_stairs_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderStoneStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/block/UnderStoneStairsBlock.java",
+          "src/main/resources/assets/underworld/models/block/under_stone_stairs.json",
+          "src/main/resources/assets/underworld/models/item/under_stone_stairs.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_stairs_outer.json",
+          "src/main/resources/assets/underworld/blockstates/under_stone_stairs.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_stairs_inner.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone_stairs.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderStoneSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/under_stone_slab_full.json",
+          "src/main/resources/assets/underworld/models/item/under_stone_slab.json",
+          "src/main/resources/assets/underworld/blockstates/under_stone_slab.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_slab.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_slab_top.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone_slab.json",
+          "src/main/java/net/mcreator/underworld/block/UnderStoneSlabBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderStoneSlabCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_slab_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_slab_crafting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_slab_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderStoneBricksStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/blockstates/under_stone_bricks_stairs.json",
+          "src/main/resources/assets/underworld/models/item/under_stone_bricks_stairs.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_stairs_outer.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_stairs.json",
+          "src/main/java/net/mcreator/underworld/block/UnderStoneBricksStairsBlock.java",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone_bricks_stairs.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_stairs_inner.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderStoneBricksSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/under_stone_bricks_slab.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone_bricks_slab.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_slab_top.json",
+          "src/main/resources/assets/underworld/blockstates/under_stone_bricks_slab.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_slab_full.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_slab.json",
+          "src/main/java/net/mcreator/underworld/block/UnderStoneBricksSlabBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderStoneBricksWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_wall_inventory.json",
+          "src/main/resources/assets/underworld/blockstates/under_stone_bricks_wall.json",
+          "src/main/java/net/mcreator/underworld/block/UnderStoneBricksWallBlock.java",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_stone_bricks_wall.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_wall.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_wall_post.json",
+          "src/main/resources/assets/underworld/models/item/under_stone_bricks_wall.json",
+          "src/main/resources/assets/underworld/models/block/under_stone_bricks_wall_side_tall.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone"
+    },
+    {
+      "name": "UnderStoneBricksStairsCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks_stairs_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_bricks_stairs_crafting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_bricks_stairs_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderStoneBricksSlabCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks_slab_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/under_stone_bricks_slab_crafting_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_bricks_slab_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderStoneBricksWallCraftingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_bricks_wall_crafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_bricks_wall_crafting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_bricks_wall_crafting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Crafting"
+    },
+    {
+      "name": "UnderStoneToUnderStoneStairCuttingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_to_under_stone_stair_cutting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_to_under_stone_stair_cutting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_to_under_stone_stair_cutting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Stone cutting/StoneRecipe"
+    },
+    {
+      "name": "UnderCobblestoneToUnderCobblestoneStairCuttingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_to_under_cobblestone_stair_cutting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/under_cobblestone_to_under_cobblestone_stair_cutting_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/under_cobblestone_to_under_cobblestone_stair_cutting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Stone cutting/CobblestoneRecipe"
+    },
+    {
+      "name": "UnderCobblestoneToUnderCobblestoneSlabCuttingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_to_under_cobblestone_slab_cutting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_cobblestone_to_under_cobblestone_slab_cutting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_cobblestone_to_under_cobblestone_slab_cutting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Stone cutting/CobblestoneRecipe"
+    },
+    {
+      "name": "UnderCobblestoneToUnderCobblestoneWallCuttingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_cobblestone_to_under_cobblestone_wall_cutting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/recipes/under_cobblestone_to_under_cobblestone_wall_cutting_recipe.json",
+          "src/main/resources/data/underworld/advancements/recipes/under_cobblestone_to_under_cobblestone_wall_cutting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Stone cutting/CobblestoneRecipe"
+    },
+    {
+      "name": "UnderStoneToUnderStoneSlabCuttingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_to_under_stone_slab_cutting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_to_under_stone_slab_cutting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_to_under_stone_slab_cutting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Stone cutting/StoneRecipe"
+    },
+    {
+      "name": "UnderStoneToUnderStoneBrickCuttingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_stone_to_under_stone_brick_cutting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/advancements/recipes/under_stone_to_under_stone_brick_cutting_recipe.json",
+          "src/main/resources/data/underworld/recipes/under_stone_to_under_stone_brick_cutting_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Stones/UnderStone/Recipe/Stone cutting/StoneRecipe"
+    },
+    {
+      "name": "LogTripping",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_tripping",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/LogTrippingProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Trees"
+    },
+    {
+      "name": "UnderSand",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/loot_tables/blocks/under_sand.json",
+          "src/main/resources/assets/underworld/models/item/under_sand.json",
+          "src/main/resources/assets/underworld/models/block/under_sand.json",
+          "src/main/resources/assets/underworld/blockstates/under_sand.json",
+          "src/main/java/net/mcreator/underworld/block/UnderSandBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Sands"
+    },
+    {
+      "name": "EternalBeach",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eternal_beach",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/worldgen/configured_feature/eternal_beach_tree.json",
+          "src/main/resources/data/underworld/worldgen/biome/eternal_beach.json",
+          "src/main/resources/data/underworld/worldgen/placed_feature/eternal_beach_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "EternalDesert",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eternal_desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/worldgen/configured_feature/eternal_desert_tree.json",
+          "src/main/resources/data/underworld/worldgen/biome/eternal_desert.json",
+          "src/main/resources/data/underworld/worldgen/placed_feature/eternal_desert_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "UnderWorldFunctional",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_world_functional",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Blocks/CreativeTabs"
+    },
+    {
+      "name": "DelusionSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/block/delusion_sign.json",
+          "src/main/java/net/mcreator/underworld/block/DelusionSignBlock.java",
+          "src/main/resources/assets/underworld/models/item/delusion_sign.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/delusion_sign.json",
+          "src/main/resources/assets/underworld/blockstates/delusion_sign.json",
+          "src/main/java/net/mcreator/underworld/block/entity/DelusionSignBlockEntity.java"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "UnderWorldFoods",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_world_foods",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Blocks/CreativeTabs"
+    },
+    {
+      "name": "FruitOfFavour",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fruit_of_favour",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/fruit_of_favour.json",
+          "src/main/java/net/mcreator/underworld/item/FruitOfFavourItem.java"
+        ]
+      },
+      "path": "~/Foods"
+    },
+    {
+      "name": "DelusionLeavesRoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_leaves_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/loot_tables/blocks/under_world.json"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "DelusionWoodSignGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_wood_sign_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/world/inventory/DelusionWoodSignGuiMenu.java",
+          "src/main/java/net/mcreator/underworld/client/gui/DelusionWoodSignGuiScreen.java"
+        ]
+      },
+      "path": "~/Blocks/Trees/DelusionWood"
+    },
+    {
+      "name": "FortuneAndSilkTouch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortune_and_silk_touch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/underworld/procedures/FortuneAndSilkTouchProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "UnderDirt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/under_dirt.json",
+          "src/main/resources/assets/underworld/blockstates/under_dirt.json",
+          "src/main/java/net/mcreator/underworld/block/UnderDirtBlock.java",
+          "src/main/resources/assets/underworld/models/block/under_dirt.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/under_dirt.json"
+        ]
+      },
+      "path": "~/Blocks/Dirts"
+    },
+    {
+      "name": "UnderGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/loot_tables/blocks/under_grass.json",
+          "src/main/resources/assets/underworld/models/item/under_grass.json",
+          "src/main/resources/assets/underworld/blockstates/under_grass.json",
+          "src/main/java/net/mcreator/underworld/block/UnderGrassBlock.java",
+          "src/main/resources/assets/underworld/models/block/under_grass.json"
+        ]
+      },
+      "path": "~/Blocks/Dirts"
+    },
+    {
+      "name": "Nihilis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nihilis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/underworld/item/NihilisItem.java",
+          "src/main/resources/assets/underworld/models/item/nihilis.json"
+        ]
+      },
+      "path": "~/Blocks/Ores/Nihilis"
+    },
+    {
+      "name": "NihilisOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nihilis_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/underworld/models/item/nihilis_ore.json",
+          "src/main/java/net/mcreator/underworld/block/NihilisOreBlock.java",
+          "src/main/resources/assets/underworld/models/block/nihilis_ore.json",
+          "src/main/resources/assets/underworld/blockstates/nihilis_ore.json",
+          "src/main/resources/data/underworld/loot_tables/blocks/nihilis_ore.json"
+        ]
+      },
+      "path": "~/Blocks/Ores/Nihilis"
+    },
+    {
+      "name": "EternalOcean",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eternal_ocean",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/underworld/worldgen/placed_feature/eternal_ocean_tree.json",
+          "src/main/resources/data/underworld/worldgen/biome/eternal_ocean.json",
+          "src/main/resources/data/underworld/worldgen/configured_feature/eternal_ocean_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "miner_entity",
+      "type": "blockstate",
+      "scope": "map",
+      "value": "Blocks.AIR.defaultBlockState()"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:logs": [
+      "CUSTOM:UnderTreeLog"
+    ],
+    "ITEMS:minecraft:logs/minecraft/items": [],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:DelusionSign",
+      "~CUSTOM:DelusionTrapDoor",
+      "~CUSTOM:DelusionButton",
+      "~CUSTOM:DelusionPressurePlate",
+      "~CUSTOM:DelusionDoor",
+      "~CUSTOM:DelusionFenceGate",
+      "~CUSTOM:DelusionFence",
+      "~CUSTOM:DelusionSlab",
+      "~CUSTOM:DelusionStairs",
+      "~CUSTOM:TrippedDelusionWood",
+      "~CUSTOM:TrippedDelusionLog",
+      "~CUSTOM:DelusionPlanks",
+      "~CUSTOM:DelusionWood",
+      "~CUSTOM:DelusionLog",
+      "~CUSTOM:LoggedWoodPlanks",
+      "~CUSTOM:LoggedWoodWood",
+      "~CUSTOM:LoggedWoodLog"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:DelusionLeaves",
+      "CUSTOM:LoggedWoodLeaves"
+    ],
+    "ITEMS:minecraft:planks/minecraft/items": [],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:UnderSand",
+      "~CUSTOM:UnderGrass",
+      "~CUSTOM:UnderDirt",
+      "~CUSTOM:UnderStone",
+      "~Blocks.MYCELIUM",
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:LoggedWoodLeaves",
+      "CUSTOM:DelusionLeaves"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:UnderStoneBricksStairs",
+      "~CUSTOM:UnderStoneStairs",
+      "~CUSTOM:UnderCobblestoneStairs",
+      "~CUSTOM:DelusionStairs",
+      "~CUSTOM:LoggedWoodStairs"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:UnderStoneBricksSlab",
+      "~CUSTOM:UnderStoneSlab",
+      "~CUSTOM:UnderCobblestoneSlab",
+      "~CUSTOM:DelusionSlab",
+      "~CUSTOM:LoggedWoodSlab"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "~CUSTOM:DelusionFence",
+      "~CUSTOM:LoggedWoodFence"
+    ],
+    "BLOCKS:mod:logged_wood_logs": [
+      "CUSTOM:LoggedWoodLog",
+      "CUSTOM:LoggedWoodWood"
+    ],
+    "BLOCKS:minecraft:logs_that_burn": [
+      "TAG:mod:logged_wood_logs",
+      "TAG:mod:delusion_logs"
+    ],
+    "BLOCKS:minecraft:planks": [
+      "CUSTOM:LoggedWoodPlanks",
+      "CUSTOM:DelusionPlanks"
+    ],
+    "ITEMS:mod:logged_wood_logs": [
+      "CUSTOM:LoggedWoodLog",
+      "CUSTOM:LoggedWoodWood"
+    ],
+    "ITEMS:minecraft:logs_that_burn": [
+      "TAG:mod:logged_wood_logs",
+      "TAG:mod:delusion_logs"
+    ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:LoggedWoodPlanks",
+      "CUSTOM:DelusionPlanks"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:Test"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:NihilisOre",
+      "~CUSTOM:UnderStoneBricksWall",
+      "~CUSTOM:UnderStoneBricksSlab",
+      "~CUSTOM:UnderStoneBricksStairs",
+      "~CUSTOM:UnderStoneSlab",
+      "~CUSTOM:UnderStoneStairs",
+      "~CUSTOM:UnderCobblestoneWall",
+      "~CUSTOM:UnderCobblestoneSlab",
+      "~CUSTOM:UnderCobblestoneStairs",
+      "~CUSTOM:UnderCobblestone",
+      "~CUSTOM:UnderStoneBricksCracked",
+      "~CUSTOM:UnderStoneBricks",
+      "~CUSTOM:UnderStone"
+    ],
+    "ITEMS:mod:delusion_logs": [
+      "CUSTOM:DelusionLog",
+      "CUSTOM:DelusionWood",
+      "CUSTOM:TrippedDelusionLog",
+      "CUSTOM:TrippedDelusionWood"
+    ],
+    "BLOCKS:mod:delusion_logs": [
+      "CUSTOM:DelusionLog",
+      "CUSTOM:DelusionWood",
+      "CUSTOM:TrippedDelusionLog",
+      "CUSTOM:TrippedDelusionWood"
+    ],
+    "ITEMS:forge:stripped_logs": [
+      "CUSTOM:TrippedDelusionLog",
+      "CUSTOM:TrippedDelusionWood"
+    ],
+    "BLOCKS:minecraft:dirt": [],
+    "ITEMS:minecraft:enchantable/mining": [],
+    "BIOMES:minecraft:is_overworld": [],
+    "ITEMS:minecraft:stone_tool_materials": [
+      "CUSTOM:UnderCobblestone"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:UnderStoneBricksWall",
+      "~CUSTOM:UnderCobblestoneWall"
+    ],
+    "ITEMS:minecraft:stone_crafting_materials": [
+      "CUSTOM:UnderCobblestone"
+    ],
+    "BLOCKS:forge:log_fix": [
+      "CUSTOM:DelusionLog",
+      "CUSTOM:DelusionWood"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:UnderGrass",
+      "~CUSTOM:UnderDirt",
+      "~CUSTOM:UnderSand"
+    ],
+    "BLOCKS:minecraft:signs": [
+      "CUSTOM:DelusionSign"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:NihilisOre"
+    ],
+    "BIOMES:mod:underworld": [
+      "CUSTOM:DelusionPlain",
+      "CUSTOM:DelusionForest",
+      "CUSTOM:LoggedDeepForest",
+      "CUSTOM:EternalBeach",
+      "CUSTOM:EternalDesert"
+    ],
+    "BLOCKS:underworld:silktouch": [
+      "CUSTOM:NihilisOre",
+      "CUSTOM:UnderGrass",
+      "CUSTOM:UnderStone",
+      "CUSTOM:LoggedWoodLeaves",
+      "CUSTOM:DelusionLeaves"
+    ],
+    "BLOCKS:underworld:fortune": [
+      "CUSTOM:NihilisOre"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.minecraft.tipped_arrow.effect.vampire_potion": "Arrow of Vampire",
+      "enchantment.underworld.grasp": "Grasp",
+      "item.minecraft.potion.effect.vampire_potion": "Potion of Vampire",
+      "effect.underworld.vampire": "Vampire",
+      "enchantment.underworld.restoration": "Restoration",
+      "item.minecraft.lingering_potion.effect.vampire_potion": "Lingering Potion of Vampire",
+      "entity.underworld.vampire_bat": "Vampire Bat",
+      "item.underworld.vampire_bat_spawn_egg": "Vampire Bat Spawn Egg",
+      "enchantment.underworld.restore": "Restore",
+      "item.minecraft.splash_potion.effect.vampire_potion": "Splash Potion of Vampire",
+      "gui.underworld.enchanted_player_gui.button_change": "Change",
+      "block.underworld.player_enchant_block": "Player Enchant Block",
+      "item.underworld.player_core": "Player Core",
+      "item_group.underworld.under_worlds_nature": "Under Worlds Nature",
+      "block.underworld.logged_wood_log": "Logged Wood Log",
+      "block.underworld.logged_wood_wood": "Logged Wood Wood",
+      "block.underworld.logged_wood_planks": "Logged Wood Planks",
+      "block.underworld.logged_wood_leaves": "Logged Wood Leaves",
+      "block.underworld.logged_wood_stairs": "Logged Wood Stairs",
+      "block.underworld.logged_wood_slab": "Logged Wood Slab",
+      "block.underworld.logged_wood_fence": "Logged Wood Fence",
+      "block.underworld.logged_wood_fence_gate": "Logged Wood Fence Gate",
+      "block.underworld.logged_wood_pressure_plate": "Logged Wood Pressure Plate",
+      "block.underworld.logged_wood_button": "Logged Wood Button",
+      "item.underworld.test": "Test",
+      "block.underworld.under_stone": "Under Stone",
+      "block.underworld.delusion_log": "Delusion Log",
+      "block.underworld.delusion_leaves": "Delusion Leaves",
+      "biome.underworld.delusion_plain": "Under World Plain",
+      "biome.underworld.delusion_forest": "Delusion Forest",
+      "block.underworld.delusion_wood": "Delusion Wood",
+      "block.underworld.delusion_planks": "Delusion Planks",
+      "block.underworld.tripped_delusion_log": "Tripped Delusion Log",
+      "block.underworld.tripped_delusion_wood": "Tripped Delusion Wood",
+      "block.underworld.delusion_stairs": "Delusion Stairs",
+      "block.underworld.delusion_slab": "Delusion Slab",
+      "block.underworld.delusion_fence": "Delusion Fence",
+      "block.underworld.delusion_fence_gate": "Delusion Fence Gate",
+      "block.underworld.delusion_door": "Delusion Door",
+      "block.underworld.delusion_pressure_plate": "Delusion Pressure Plate",
+      "block.underworld.delusion_button": "Delusion Button",
+      "block.underworld.delusion_trap_door": "Delusion Pressure Plate",
+      "biome.underworld.logged_deep_forest": "Logged Deep Forest",
+      "block.underworld.under_stone_bricks": "Under Stone Bricks",
+      "block.underworld.under_stone_bricks_cracked": "Cracked Under Stone Bricks",
+      "block.underworld.under_cobblestone": "Under Cobble Stone",
+      "block.underworld.under_cobblestone_stairs": "Under Cobble Stone Stairs",
+      "item_group.underworld.under_world_building_blocks": "Under World Building Blocks",
+      "block.underworld.under_cobblestone_slab": "Under Cobble Stone Slab",
+      "block.underworld.under_cobblestone_wall": "Under Cobble Stone Wall",
+      "block.underworld.under_stone_stairs": "Under Stone Stairs",
+      "block.underworld.under_stone_slab": "Under Stone Slab",
+      "block.underworld.under_stone_bricks_stairs": "Under Stone Bricks Stairs",
+      "block.underworld.under_stone_bricks_slab": "Under Stone Bricks Slab",
+      "block.underworld.under_stone_bricks_wall": "Under Stone Bricks Wall",
+      "block.underworld.under_sand": "Under Sand",
+      "biome.underworld.eternal_beach": "Eternal Beach",
+      "biome.underworld.eternal_desert": "Eternal Desert",
+      "item_group.underworld.under_world_functional": "Under World Functional",
+      "block.underworld.delusion_sign": "Delusion Pressure Plate",
+      "item_group.underworld.under_world_foods": "Under World Foods",
+      "item.underworld.fruit_of_favour": "Fruit Of Favour",
+      "gui.underworld.delusion_wood_sign_gui.button_ready": "Ready!",
+      "gui.underworld.delusion_wood_sign_gui.textVar": "",
+      "block.underworld.under_dirt": "Under Dirt",
+      "block.underworld.under_grass": "Under Dirt",
+      "item.underworld.nihilis": "Nihilis",
+      "block.underworld.nihilis_ore": "Nihilis Ore",
+      "biome.underworld.eternal_ocean": "Eternal Ocean"
+    },
+    "ja_jp": {
+      "item.minecraft.tipped_arrow.effect.vampire_potion": "ヴァンパイアの矢",
+      "enchantment.underworld.grasp": "掌握",
+      "item.minecraft.potion.effect.vampire_potion": "ヴァンパイアのポーション",
+      "effect.underworld.vampire": "ヴァンパイアのエフェクト",
+      "enchantment.underworld.restoration": "復元",
+      "item.minecraft.lingering_potion.effect.vampire_potion": "ヴァンパイアの残留ポーション",
+      "entity.underworld.vampire_bat": "吸血コウモリ",
+      "item.underworld.vampire_bat_spawn_egg": "吸血コウモリのスポーンエッグ",
+      "enchantment.underworld.restore": "復元",
+      "item.minecraft.splash_potion.effect.vampire_potion": "ヴァンパイアのスプラッシュポーション",
+      "gui.underworld.enchanted_player_gui.button_change": "変換",
+      "block.underworld.player_enchant_block": "プレイヤーエンチャントブロック",
+      "item.underworld.player_core": "プレイヤーコア",
+      "item_group.underworld.under_worlds_nature": "冥界の自然ブロック",
+      "block.underworld.logged_wood_log": "記録された原木",
+      "block.underworld.logged_wood_wood": "記録された木",
+      "block.underworld.logged_wood_planks": "記録された木材",
+      "block.underworld.logged_wood_leaves": "記録された葉",
+      "block.underworld.logged_wood_stairs": "記録された階段",
+      "block.underworld.logged_wood_slab": "記録されたハーフブロック",
+      "block.underworld.logged_wood_fence": "記録されたフェンス",
+      "block.underworld.logged_wood_fence_gate": "記録されたフェンスゲート",
+      "block.underworld.logged_wood_pressure_plate": "記録された感圧版",
+      "block.underworld.logged_wood_button": "記録されたボタン",
+      "item.underworld.test": "Test",
+      "block.underworld.under_stone": "冥界の石",
+      "block.underworld.delusion_log": "虚妄の原木",
+      "block.underworld.delusion_leaves": "虚妄の葉",
+      "biome.underworld.delusion_plain": "虚妄の草原",
+      "biome.underworld.delusion_forest": "虚妄の森林",
+      "block.underworld.delusion_wood": "虚妄の木",
+      "block.underworld.delusion_planks": "虚妄の板材",
+      "block.underworld.tripped_delusion_log": "樹皮を剥いだ虚妄の原木",
+      "block.underworld.tripped_delusion_wood": "樹皮を剥いだ虚妄の木",
+      "block.underworld.delusion_stairs": "虚妄の階段",
+      "block.underworld.delusion_slab": "虚妄のハーフブロック",
+      "block.underworld.delusion_fence": "虚妄のフェンス",
+      "block.underworld.delusion_fence_gate": "虚妄のフェンスゲート",
+      "block.underworld.delusion_door": "虚妄のドア",
+      "block.underworld.delusion_pressure_plate": "虚妄の感圧版",
+      "block.underworld.delusion_button": "虚妄のボタン",
+      "block.underworld.delusion_trap_door": "虚妄のトラップドア",
+      "biome.underworld.logged_deep_forest": "記録された深い森",
+      "block.underworld.under_stone_bricks": "冥界の石レンガ",
+      "block.underworld.under_stone_bricks_cracked": "ひび割れた冥界の石レンガ",
+      "block.underworld.under_cobblestone": "冥界の丸石",
+      "block.underworld.under_cobblestone_stairs": "冥界の丸石の階段",
+      "item_group.underworld.under_world_building_blocks": "冥界の建築ブロック",
+      "block.underworld.under_cobblestone_slab": "冥界の丸石のハーフブロック",
+      "block.underworld.under_cobblestone_wall": "冥界の丸石の塀",
+      "block.underworld.under_stone_stairs": "冥界の石の階段",
+      "block.underworld.under_stone_slab": "冥界の石のハーフブロック",
+      "block.underworld.under_stone_bricks_stairs": "冥界の石レンガの階段",
+      "block.underworld.under_stone_bricks_slab": "冥界の石レンガのハーフブロック",
+      "block.underworld.under_stone_bricks_wall": "冥界の石レンガの塀",
+      "block.underworld.under_sand": "冥界の砂",
+      "biome.underworld.eternal_beach": "永遠なる浜辺",
+      "biome.underworld.eternal_desert": "永遠なる砂漠",
+      "item_group.underworld.under_world_functional": "冥界の機能ブロック",
+      "block.underworld.delusion_sign": "Delusion Pressure Plate",
+      "item_group.underworld.under_world_foods": "冥界の食糧",
+      "item.underworld.fruit_of_favour": "寵愛の実",
+      "gui.underworld.delusion_wood_sign_gui.button_ready": "Ready!",
+      "gui.underworld.delusion_wood_sign_gui.textVar": "",
+      "block.underworld.under_dirt": "冥界の土",
+      "block.underworld.under_grass": "冥界の草ブロック",
+      "item.underworld.nihilis": "Nihilis",
+      "block.underworld.nihilis_ore": "Nihilis Ore",
+      "biome.underworld.eternal_ocean": "Eternal Beach"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/underworld/init/UnderworldModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/underworld/UnderworldMod.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/underworld/network/UnderworldModVariables.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModModels.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModScreens.java",
+      "src/main/java/net/mcreator/underworld/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModMenus.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModEnchantments.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModPotions.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModMobEffects.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModBlocks.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModBlockEntities.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModItems.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModEntities.java",
+      "src/main/java/net/mcreator/underworld/init/UnderworldModEntityRenderers.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Stones",
+            "children": [
+              {
+                "name": "UnderStone",
+                "children": [
+                  {
+                    "name": "Recipe",
+                    "children": [
+                      {
+                        "name": "Crafting",
+                        "children": []
+                      },
+                      {
+                        "name": "Smelting",
+                        "children": []
+                      },
+                      {
+                        "name": "Stone cutting",
+                        "children": [
+                          {
+                            "name": "CobblestoneRecipe",
+                            "children": []
+                          },
+                          {
+                            "name": "StoneRecipe",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Trees",
+            "children": [
+              {
+                "name": "LoggedWood",
+                "children": []
+              },
+              {
+                "name": "DelusionWood",
+                "children": [
+                  {
+                    "name": "Recipe",
+                    "children": [
+                      {
+                        "name": "VanillaItems",
+                        "children": []
+                      },
+                      {
+                        "name": "BuildingBlocks",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dirts",
+            "children": []
+          },
+          {
+            "name": "CreativeTabs",
+            "children": []
+          },
+          {
+            "name": "Sands",
+            "children": []
+          },
+          {
+            "name": "Ores",
+            "children": [
+              {
+                "name": "Nihilis",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Foods",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "underworld",
+    "modName": "UnderWorld,",
+    "version": "1.0.0",
+    "author": "super, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.underworld"
+  },
+  "mcreatorVersion": 202500228610
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "underworld:block/under_dirt",
+    "top": "underworld:block/under_grass_front",
+    "side": "underworld:block/under_grass_side",
+    "overlay": "underworld:block/under_grass_side",
+    "particle": "underworld:block/under_dirt"
+  },
+  "render_type": "solid"
+}

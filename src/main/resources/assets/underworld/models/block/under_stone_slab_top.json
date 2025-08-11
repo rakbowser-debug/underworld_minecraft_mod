@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "underworld:block/under_stone",
+    "bottom": "underworld:block/under_stone",
+    "top": "underworld:block/under_stone",
+    "side": "underworld:block/under_stone"
+  },
+  "render_type": "solid"
+}

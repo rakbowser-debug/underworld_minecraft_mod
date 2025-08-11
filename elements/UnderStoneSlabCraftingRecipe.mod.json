@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:UnderStone"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:UnderStone"
+      },
+      {
+        "value": "CUSTOM:UnderStone"
+      },
+      {
+        "value": "CUSTOM:UnderStone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UnderStoneSlab"
+    },
+    "name": "under_stone_slab_crafting_recipe",
+    "namespace": "mod"
+  }
+}

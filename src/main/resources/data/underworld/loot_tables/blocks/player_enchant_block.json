@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "underworld:blocks/player_enchant_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "underworld:player_enchant_block"
+        }
+      ]
+    }
+  ]
+}

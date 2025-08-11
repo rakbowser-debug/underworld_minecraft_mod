@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "underworld:delusion_planks"
+    }
+  ],
+  "result": {
+    "item": "underworld:delusion_button",
+    "count": 1
+  }
+}

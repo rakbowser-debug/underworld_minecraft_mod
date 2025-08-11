@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "underworld:block/under_cobblestone",
+    "particle": "underworld:block/under_cobblestone"
+  },
+  "render_type": "solid"
+}

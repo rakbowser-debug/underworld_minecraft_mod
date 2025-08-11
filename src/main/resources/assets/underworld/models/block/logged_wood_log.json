@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "underworld:block/logged_wood_log_top",
+    "up": "underworld:block/logged_wood_log_top",
+    "north": "underworld:block/logged_wood_log_side",
+    "east": "underworld:block/logged_wood_log_side",
+    "south": "underworld:block/logged_wood_log_side",
+    "west": "underworld:block/logged_wood_log_side",
+    "particle": "underworld:block/logged_wood_log_top"
+  },
+  "render_type": "solid"
+}

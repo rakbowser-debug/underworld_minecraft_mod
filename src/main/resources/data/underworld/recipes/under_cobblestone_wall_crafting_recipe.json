@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "underworld:under_cobblestone"
+    }
+  },
+  "result": {
+    "item": "underworld:under_cobblestone_wall",
+    "count": 6
+  }
+}

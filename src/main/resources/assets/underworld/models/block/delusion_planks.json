@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "underworld:block/delusion_planks_pattern",
+    "top": "underworld:block/delusion_planks_pattern",
+    "side": "underworld:block/delusion_planks_pattern",
+    "overlay": "underworld:block/delusion_planks_pattern",
+    "particle": "underworld:block/delusion_planks_pattern"
+  },
+  "render_type": "cutout_mipped"
+}

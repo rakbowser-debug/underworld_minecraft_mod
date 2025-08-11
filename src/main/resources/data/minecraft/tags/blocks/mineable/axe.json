@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "underworld:delusion_button",
+    "underworld:delusion_wood",
+    "underworld:logged_wood_planks",
+    "underworld:delusion_pressure_plate",
+    "underworld:delusion_planks",
+    "underworld:logged_wood_wood",
+    "underworld:delusion_sign",
+    "underworld:logged_wood_log",
+    "underworld:delusion_stairs",
+    "underworld:delusion_slab",
+    "underworld:delusion_door",
+    "underworld:delusion_fence_gate",
+    "underworld:tripped_delusion_log",
+    "underworld:delusion_fence",
+    "underworld:tripped_delusion_wood",
+    "underworld:delusion_log",
+    "underworld:delusion_trap_door"
+  ]
+}

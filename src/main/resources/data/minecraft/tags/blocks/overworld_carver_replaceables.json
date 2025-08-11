@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "underworld:under_grass",
+    "underworld:under_dirt",
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:mycelium",
+    "underworld:under_stone",
+    "underworld:under_sand"
+  ]
+}

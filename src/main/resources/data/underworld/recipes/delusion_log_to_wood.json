@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "underworld:delusion_log"
+    }
+  },
+  "result": {
+    "item": "underworld:delusion_wood",
+    "count": 3
+  }
+}

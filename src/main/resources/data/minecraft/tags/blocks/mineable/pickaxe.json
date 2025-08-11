@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "underworld:under_cobblestone_stairs",
+    "underworld:under_stone_bricks_stairs",
+    "underworld:under_stone_bricks_slab",
+    "underworld:under_stone_slab",
+    "underworld:under_stone_stairs",
+    "underworld:nihilis_ore",
+    "underworld:under_stone_bricks_wall",
+    "underworld:under_cobblestone_slab",
+    "underworld:under_stone_bricks_cracked",
+    "underworld:under_stone",
+    "underworld:under_cobblestone",
+    "underworld:under_cobblestone_wall",
+    "underworld:under_stone_bricks"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "underworld:under_grass",
+    "underworld:logged_wood_leaves",
+    "underworld:delusion_leaves",
+    "underworld:under_stone",
+    "underworld:nihilis_ore"
+  ]
+}

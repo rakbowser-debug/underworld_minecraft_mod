@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "underworld:block/under_cobblestone",
+    "bottom": "underworld:block/under_cobblestone",
+    "top": "underworld:block/under_cobblestone",
+    "side": "underworld:block/under_cobblestone"
+  },
+  "render_type": "solid"
+}
