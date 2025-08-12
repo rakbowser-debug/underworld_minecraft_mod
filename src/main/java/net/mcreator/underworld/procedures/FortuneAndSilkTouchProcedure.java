@@ -143,14 +143,27 @@ public class FortuneAndSilkTouchProcedure {
 						}
 					}
 				}
-			} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof PickaxeItem) {
-				if (event != null && event.isCancelable()) {
-					event.setCanceled(true);
-				} else if (event != null && event.hasResult()) {
-					event.setResult(Event.Result.DENY);
-				}
-				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == UnderworldModBlocks.UNDER_STONE.get()) {
+			} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof PickaxeItem) {
+					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("underworld:silktouch")))) {
+						if (event != null && event.isCancelable()) {
+							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
+						}
+						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem().isCorrectToolForDrops((world.getBlockState(BlockPos.containing(x, y, z))))) {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+										new ItemStack(ForgeRegistries.ITEMS.getValue(ResourceLocation.parse(((ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString())).toLowerCase(java.util.Locale.ENGLISH)))));
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
+							world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+						}
+					}
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == UnderworldModBlocks.UNDER_GRASS.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == UnderworldModBlocks.DELUSION_LEAVES.get()
+						|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == UnderworldModBlocks.LOGGED_WOOD_LEAVES.get()
+						|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == UnderworldModBlocks.LOGGED_WOOD_LEAVES.get()) {
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
 								new ItemStack(ForgeRegistries.ITEMS.getValue(ResourceLocation.parse(((ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString())).toLowerCase(java.util.Locale.ENGLISH)))));
@@ -158,17 +171,6 @@ public class FortuneAndSilkTouchProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 				}
-				if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("underworld:silktouch")))) {
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem().isCorrectToolForDrops((world.getBlockState(BlockPos.containing(x, y, z))))) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-									new ItemStack(ForgeRegistries.ITEMS.getValue(ResourceLocation.parse(((ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString())).toLowerCase(java.util.Locale.ENGLISH)))));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-				}
-				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			}
 		}
 	}

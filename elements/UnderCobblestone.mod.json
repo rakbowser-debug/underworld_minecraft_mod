@@ -50,7 +50,7 @@
     "immuneToFire": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:UnderWorldsNature"
+        "value": "CUSTOM:UnderWorldBuildingBlocks"
       }
     ],
     "destroyTool": "pickaxe",

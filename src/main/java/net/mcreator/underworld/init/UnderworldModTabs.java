@@ -22,12 +22,12 @@ public class UnderworldModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, UnderworldMod.MODID);
 	public static final RegistryObject<CreativeModeTab> UNDER_WORLDS_NATURE = REGISTRY.register("under_worlds_nature",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.underworld.under_worlds_nature")).icon(() -> new ItemStack(UnderworldModBlocks.DELUSION_LOG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(UnderworldModBlocks.UNDER_STONE.get().asItem());
 				tabData.accept(UnderworldModBlocks.DELUSION_LOG.get().asItem());
 				tabData.accept(UnderworldModBlocks.DELUSION_LEAVES.get().asItem());
 				tabData.accept(UnderworldModBlocks.DELUSION_WOOD.get().asItem());
 				tabData.accept(UnderworldModBlocks.TRIPPED_DELUSION_LOG.get().asItem());
 				tabData.accept(UnderworldModBlocks.TRIPPED_DELUSION_WOOD.get().asItem());
-				tabData.accept(UnderworldModBlocks.UNDER_COBBLESTONE.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_SAND.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_DIRT.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_GRASS.get().asItem());
@@ -48,6 +48,7 @@ public class UnderworldModTabs {
 				tabData.accept(UnderworldModBlocks.DELUSION_TRAP_DOOR.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_STONE_BRICKS.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_STONE_BRICKS_CRACKED.get().asItem());
+				tabData.accept(UnderworldModBlocks.UNDER_COBBLESTONE.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_COBBLESTONE_STAIRS.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_COBBLESTONE_SLAB.get().asItem());
 				tabData.accept(UnderworldModBlocks.UNDER_COBBLESTONE_WALL.get().asItem());

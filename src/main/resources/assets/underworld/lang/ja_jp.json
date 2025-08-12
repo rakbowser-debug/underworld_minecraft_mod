@@ -65,7 +65,7 @@
   "gui.underworld.delusion_wood_sign_gui.textVar": "",
   "block.underworld.under_dirt": "冥界の土",
   "block.underworld.under_grass": "冥界の草ブロック",
-  "item.underworld.nihilis": "Nihilis",
-  "block.underworld.nihilis_ore": "Nihilis Ore",
-  "biome.underworld.eternal_ocean": "Eternal Beach"
+  "item.underworld.nihilis": "ニヒリス",
+  "block.underworld.nihilis_ore": "ニヒリスの鉱石",
+  "biome.underworld.eternal_ocean": "永遠なる海"
 }
